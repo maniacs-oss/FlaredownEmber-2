@@ -1,9 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-
-  selectableData: Ember.inject.service('selectable-data'),
-
   countrySorting: ['name:asc'],
   countries: Ember.computed.sort('selectableData.countries', 'countrySorting'),
 
@@ -26,7 +23,6 @@ export default Ember.Component.extend({
       this.get('model').save().then( (profile) => {
         this.sendAction('onProfileSaved', profile);
       });
-    }
-  }
-
+    },
+  },
 });

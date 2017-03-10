@@ -16,7 +16,7 @@ export default Component.extend({
 
   actions: {
     askOracle(oracleRequest) {
-      oracleRequest.save();
+      oracleRequest.askOracle();
     },
   },
 });

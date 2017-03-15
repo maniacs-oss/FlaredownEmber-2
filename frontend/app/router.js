@@ -27,7 +27,8 @@ Router.map(function() {
   this.route('privacy-policy');
 
   this.route('settings');
-  this.route('oracle');
+  this.route('oracle', function() {
+  });
 });
 
 export default Router;

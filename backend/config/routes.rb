@@ -84,6 +84,11 @@ Rails.application.routes.draw do
       resources :invitations, only: [:show, :update]
 
       #
+      # Oracle requests
+      #
+      resources :oracle_requests, only: [:show, :create]
+
+      #
       # Passwords
       #
       resources :passwords, only: [:show, :create, :update]

@@ -28,6 +28,7 @@ Router.map(function() {
 
   this.route('settings');
   this.route('oracle', function() {
+    this.route('result', { path: ':id' });
   });
 });
 
